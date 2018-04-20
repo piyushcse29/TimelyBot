@@ -1,0 +1,207 @@
+[
+  {
+    "id": "d7715633-788e-41a0-82e9-8bac8aaa462f",
+    "data": [
+      {
+        "text": "Taking leave",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524195800
+  },
+  {
+    "id": "1beb3181-bd1b-42b2-8111-4c8789bcd266",
+    "data": [
+      {
+        "text": "I want to take leave",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524195800
+  },
+  {
+    "id": "60ca720a-df2a-4d4e-9432-5d37371d8ecd",
+    "data": [
+      {
+        "text": "My ",
+        "userDefined": false
+      },
+      {
+        "text": "email",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " is",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524195800
+  },
+  {
+    "id": "83bae968-9ccf-4924-8b92-2d92970845f1",
+    "data": [
+      {
+        "text": "confirm",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524195800
+  },
+  {
+    "id": "5a5afb33-5712-4a99-8614-0b2611ea6ee8",
+    "data": [
+      {
+        "text": "I want to take ",
+        "userDefined": false
+      },
+      {
+        "text": "ออกจาก",
+        "alias": "leave_type",
+        "meta": "@Leave-Type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524195800
+  },
+  {
+    "id": "60fcb0ce-6e44-46fd-8124-348c0a9857a1",
+    "data": [
+      {
+        "text": "I was on leave ",
+        "userDefined": false
+      },
+      {
+        "text": "yesterday",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524195800
+  },
+  {
+    "id": "2c3b505c-ba36-4acc-b725-469a2ac4aafd",
+    "data": [
+      {
+        "text": "I will be on ",
+        "userDefined": false
+      },
+      {
+        "text": "leave",
+        "alias": "leave_type",
+        "meta": "@Leave-Type",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "tommorow",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524195800
+  },
+  {
+    "id": "84ac58e7-3da0-4609-94ab-2d4d3e4360c9",
+    "data": [
+      {
+        "text": "I will be on ",
+        "userDefined": false
+      },
+      {
+        "text": "vacation",
+        "alias": "leave_type",
+        "meta": "@Leave-Type",
+        "userDefined": true
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524195800
+  },
+  {
+    "id": "3ab015fb-09bc-4344-bafc-5c800ed8962c",
+    "data": [
+      {
+        "text": "I want to take ",
+        "userDefined": false
+      },
+      {
+        "text": "vacation",
+        "alias": "leave_type",
+        "meta": "@Leave-Type",
+        "userDefined": true
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524195800
+  },
+  {
+    "id": "761a5824-4f29-40d3-afa2-6c290ec4b472",
+    "data": [
+      {
+        "text": "I will be on ",
+        "userDefined": false
+      },
+      {
+        "text": "leave",
+        "alias": "leave_type",
+        "meta": "@Leave-Type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524195800
+  },
+  {
+    "id": "cd13caab-341e-49be-ae0e-eee2f4ef1bb4",
+    "data": [
+      {
+        "text": "I want to take ",
+        "userDefined": false
+      },
+      {
+        "text": "leave",
+        "alias": "leave_type",
+        "meta": "@Leave-Type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524195800
+  }
+]

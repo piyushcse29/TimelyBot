@@ -1,0 +1,137 @@
+{
+  "id": "a56eec12-1871-42b4-907c-cf2e94026457",
+  "name": "One-day-leave",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "oneDayLeave",
+      "affectedContexts": [
+        {
+          "name": "One-day-leave-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "bc588388-e1a3-498d-9a15-558f72b63d4f",
+          "required": false,
+          "dataType": "@Leave-Type",
+          "name": "leave_type",
+          "value": "$leave_type",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please tell your leave type."
+            },
+            {
+              "lang": "en",
+              "value": "Which type of leave you want?"
+            }
+          ],
+          "isList": true
+        },
+        {
+          "id": "7a631938-3043-45e0-9b3a-e31f04350399",
+          "required": true,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "When do you want to take leave?"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "750c1908-ec7d-4169-9b26-9a84861e0c9a",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please tell your email id."
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": "list_card",
+          "platform": "google",
+          "lang": "en",
+          "title": "Choose Leave Type",
+          "items": [
+            {
+              "optionInfo": {
+                "key": "Vacation",
+                "synonyms": []
+              },
+              "title": "Vacation",
+              "description": "You are left with 9 leaves.",
+              "image": {
+                "url": "https://vacationidea.com/pix/img25Hy8R/travel/august_vacation_travel_t5.jpg",
+                "accessibilityText": "Vacation"
+              }
+            },
+            {
+              "optionInfo": {
+                "key": "Sick",
+                "synonyms": []
+              },
+              "title": "Sick",
+              "description": "Your are left with 4 leaves. For more then 3 days leave you need to submit medical proofs.",
+              "image": {
+                "url": "https://thumbs.dreamstime.com/b/my-sick-leave-cartoon-business-man-36597695.jpg"
+              }
+            },
+            {
+              "optionInfo": {
+                "key": "Work from home",
+                "synonyms": []
+              },
+              "title": "Work from home",
+              "description": "If you are applying for WFH, your manager will get notified about your day off.",
+              "image": {
+                "url": "https://officechai.com/wp-content/uploads/2015/09/wfh.jpg"
+              }
+            },
+            {
+              "optionInfo": {
+                "key": "Paternity",
+                "synonyms": []
+              },
+              "title": "Paternity",
+              "description": "Please talk to HR team about leave policies before applying.",
+              "image": {
+                "url": "https://encrypted-tbn0.gstatic.com/images?q\u003dtbn:ANd9GcThUz7yJe22bBnalFP6vGmTdN3jE7cA0TLudqkb9bwgIzeomTH1mw"
+              }
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Please tell your leave type."
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "google": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1524195800,
+  "fallbackIntent": false,
+  "events": []
+}

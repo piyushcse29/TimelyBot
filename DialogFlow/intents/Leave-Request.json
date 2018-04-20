@@ -1,0 +1,72 @@
+{
+  "id": "92760aaa-cbae-4d6b-8306-fa9b054bc221",
+  "name": "Leave-Request",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "leaveRequest",
+      "affectedContexts": [
+        {
+          "name": "Leave-Request-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "82824895-7cf4-4aee-988c-a2fb9db0d31f",
+          "required": true,
+          "dataType": "@sys.date-period",
+          "name": "date-period",
+          "value": "$date-period",
+          "isList": false
+        },
+        {
+          "id": "7d4d28bb-644b-4843-9991-d6d2f1ff9331",
+          "required": true,
+          "dataType": "@Leave-Type",
+          "name": "Leave-Type",
+          "value": "$Leave-Type",
+          "isList": false
+        },
+        {
+          "id": "3dd964f6-bc0e-4c81-a0c4-7dc7146292b3",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your id."
+            },
+            {
+              "lang": "en",
+              "value": "Enter your email id."
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Sorry, something went wrong."
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "google": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1523357683,
+  "fallbackIntent": false,
+  "events": []
+}

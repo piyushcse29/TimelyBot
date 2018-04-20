@@ -1,0 +1,103 @@
+{
+  "id": "a720504a-3d0e-4ae1-994d-6b7f78a97614",
+  "name": "Holidays",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "holidays",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "basic_card",
+          "platform": "google",
+          "lang": "en",
+          "title": "Thailand Public Holidays",
+          "subtitle": "Upcoming:",
+          "formattedText": "28 May 2018 Monday Memorial Day",
+          "image": {
+            "url": "https://www.thaizer.com/wp-content/uploads/2017/09/Public_Holidays_Thailand_2018.jpg",
+            "accessibilityText": "Thailand Public Holidays"
+          },
+          "buttons": [
+            {
+              "title": "Click to know more",
+              "openUrlAction": {
+                "url": "https://www.officeholidays.com/countries/thailand/index.php",
+                "urlTypeHint": "URL_TYPE_HINT_UNSPECIFIED"
+              }
+            }
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "platform": "google",
+          "lang": "en",
+          "payload": {
+            "google": {
+              "conversationToken": "",
+              "expectUserResponse": true,
+              "expectedInputs": [
+                {
+                  "inputPrompt": {
+                    "richInitialPrompt": {
+                      "items": [
+                        {
+                          "simpleResponse": {
+                            "textToSpeech": "Math and prime numbers it is!"
+                          }
+                        },
+                        {
+                          "basicCard": {
+                            "title": "Math \u0026 prime numbers",
+                            "formattedText": "42 is an even composite number. It\n    is composed of three distinct prime numbers multiplied together. It\n    has a total of eight divisors. 42 is an abundant number, because the\n    sum of its proper divisors 54 is greater than itself. To count from\n    1 to 42 would take you about twenty-one…",
+                            "image": {
+                              "url": "https://example.google.com/42.png",
+                              "accessibilityText": "Image alternate text"
+                            },
+                            "buttons": [
+                              {
+                                "title": "Read more",
+                                "openUrlAction": {
+                                  "url": "https://example.google.com/mathandprimes"
+                                }
+                              }
+                            ],
+                            "imageDisplayOptions": "CROPPED"
+                          }
+                        }
+                      ],
+                      "suggestions": []
+                    }
+                  },
+                  "possibleIntents": [
+                    {
+                      "intent": "actions.intent.TEXT"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Sure. Here is the list:"
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "google": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1524201521,
+  "fallbackIntent": false,
+  "events": []
+}

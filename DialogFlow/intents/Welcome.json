@@ -1,0 +1,37 @@
+{
+  "id": "c53c364c-ec94-493c-90b5-4460f5de201f",
+  "name": "Welcome",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Hi, I am TMB Leave Bot. I can help you apply for leaves and track your leave history.",
+            "Welcome to TMB Leave Bot. Type \"I want to take leave\" if you want to take day  off.",
+            "TMB Leave Bot welcomes you. Type \"Show Summary\" to get leave history."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1524197690,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

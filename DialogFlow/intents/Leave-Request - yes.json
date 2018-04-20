@@ -1,0 +1,33 @@
+{
+  "id": "4f7b3f86-f3a3-433b-8138-efc18b356b49",
+  "parentId": "92760aaa-cbae-4d6b-8306-fa9b054bc221",
+  "rootParentId": "92760aaa-cbae-4d6b-8306-fa9b054bc221",
+  "name": "Leave-Request - yes",
+  "auto": true,
+  "contexts": [
+    "Leave-Request-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Leave-Request.Leave-Request-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1523960053,
+  "fallbackIntent": false,
+  "events": []
+}

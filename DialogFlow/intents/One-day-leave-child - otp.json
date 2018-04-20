@@ -1,0 +1,42 @@
+{
+  "id": "c0dbbb31-ed1a-4b46-bf81-4ba24471f4e7",
+  "parentId": "2c734a27-092b-464b-ba1e-fe691c9ccfc3",
+  "rootParentId": "a56eec12-1871-42b4-907c-cf2e94026457",
+  "name": "One-day-leave-child - otp",
+  "auto": true,
+  "contexts": [
+    "One-day-leave-child-confirm-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "One-day-leave.One-day-leave-custom.One-day-leave-custom.One-day-leave-child-confirm-otp",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "42597a98-8e02-4855-a32d-be3773a6523c",
+          "required": true,
+          "dataType": "@sys.number-integer",
+          "name": "otp",
+          "value": "$otp",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1524130291,
+  "fallbackIntent": false,
+  "events": []
+}

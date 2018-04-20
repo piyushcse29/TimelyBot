@@ -1,0 +1,72 @@
+{
+  "id": "2c734a27-092b-464b-ba1e-fe691c9ccfc3",
+  "parentId": "fb2345ed-5cb6-470e-910a-1d69f5965294",
+  "rootParentId": "a56eec12-1871-42b4-907c-cf2e94026457",
+  "name": "One-day-leave-child - confirm",
+  "auto": true,
+  "contexts": [
+    "One-day-leave-child-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "One-day-leave.One-day-leave-custom.One-day-leave-custom",
+      "affectedContexts": [
+        {
+          "name": "One-day-leave-child-confirm-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "c12f5732-6431-4105-8603-ef605fd11e2d",
+          "required": false,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "#One-day-leave-child-followup.email",
+          "isList": false
+        },
+        {
+          "id": "80c8e720-b4c5-44ce-a769-83dfeea69a25",
+          "required": false,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "#One-day-leave-child-followup.date",
+          "isList": false
+        },
+        {
+          "id": "e749d4f2-6231-48c2-a232-f72d592c4374",
+          "required": false,
+          "dataType": "@Leave-Type",
+          "name": "leave_type",
+          "value": "#One-day-leave-child-followup.leave_type",
+          "isList": false
+        },
+        {
+          "id": "5b3d60af-0296-417b-9eef-ce09d2aaacf0",
+          "required": false,
+          "dataType": "@Leave-Confirm",
+          "name": "confirm",
+          "value": "$confirm",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1524128679,
+  "fallbackIntent": false,
+  "events": []
+}

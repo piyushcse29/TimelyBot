@@ -1,0 +1,15 @@
+[
+  {
+    "value": "date",
+    "synonyms": [
+      "date",
+      "time"
+    ]
+  },
+  {
+    "value": "tomorrow",
+    "synonyms": [
+      "tomorrow"
+    ]
+  }
+]

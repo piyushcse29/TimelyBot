@@ -1,0 +1,30 @@
+[
+  {
+    "id": "3ef506fe-2b34-44d3-a651-104eec6c3c45",
+    "data": [
+      {
+        "text": "Cat",
+        "alias": "TestType",
+        "meta": "@TestType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524049354
+  },
+  {
+    "id": "742f10ed-2d2b-48e8-831a-2f6551b6c932",
+    "data": [
+      {
+        "text": "Dog",
+        "alias": "TestType",
+        "meta": "@TestType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524049354
+  }
+]

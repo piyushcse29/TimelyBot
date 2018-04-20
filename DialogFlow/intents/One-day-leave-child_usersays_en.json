@@ -1,0 +1,48 @@
+[
+  {
+    "id": "2adb46a6-1f28-4923-9d18-bbf61bc7f518",
+    "data": [
+      {
+        "text": "vacation",
+        "alias": "leave_type",
+        "meta": "@Leave-Type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524122909
+  },
+  {
+    "id": "53746b40-6e31-4692-97b4-f9ff7ecea193",
+    "data": [
+      {
+        "text": "Work from ",
+        "userDefined": false
+      },
+      {
+        "text": "home",
+        "alias": "leave_type",
+        "meta": "@Leave-Type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524122909
+  },
+  {
+    "id": "d376cb6c-3ee2-4349-bcfe-607be89c2d2f",
+    "data": [
+      {
+        "text": "Sick",
+        "alias": "leave_type",
+        "meta": "@Leave-Type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524122909
+  }
+]

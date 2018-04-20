@@ -1,0 +1,28 @@
+{
+  "id": "ab58d422-614b-4a06-a577-85c3127fd5ca",
+  "name": "Bot Tour",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1522399002,
+  "fallbackIntent": false,
+  "events": []
+}

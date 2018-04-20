@@ -1,0 +1,26 @@
+[
+  {
+    "id": "26bb8337-cb24-4da6-9edb-b046b7c35619",
+    "data": [
+      {
+        "text": "Show me the tour",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524116303
+  },
+  {
+    "id": "5bc9688b-d26e-4bb5-9963-38467e86ff00",
+    "data": [
+      {
+        "text": "Bot Tour",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524116303
+  }
+]

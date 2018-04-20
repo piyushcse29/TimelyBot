@@ -1,0 +1,42 @@
+{
+  "id": "150f6e23-03cb-4d0e-a217-903a86027529",
+  "parentId": "4fc73c74-c44c-4748-ba8a-57e786f12bda",
+  "rootParentId": "4fc73c74-c44c-4748-ba8a-57e786f12bda",
+  "name": "Testing - custom",
+  "auto": true,
+  "contexts": [
+    "Testing-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Testing.Testing-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "95f66e2c-6961-4b26-b25d-2cae726ab8b5",
+          "required": true,
+          "dataType": "@TestType",
+          "name": "TestType",
+          "value": "$TestType",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1524049354,
+  "fallbackIntent": false,
+  "events": []
+}

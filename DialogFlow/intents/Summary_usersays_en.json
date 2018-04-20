@@ -1,0 +1,68 @@
+[
+  {
+    "id": "828b6383-259b-49bf-bc04-e4c2ecf30b1a",
+    "data": [
+      {
+        "text": "Summary ",
+        "userDefined": false
+      },
+      {
+        "text": "user",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523351063
+  },
+  {
+    "id": "a0917348-bcc5-42e2-bf3a-40cf93a930b0",
+    "data": [
+      {
+        "text": "Summary",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523351063
+  },
+  {
+    "id": "102454e1-c2a0-4a29-baba-fa6b51f52d06",
+    "data": [
+      {
+        "text": "Show report",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523351063
+  },
+  {
+    "id": "ed3c89f6-c46f-4490-8a1a-eb540ac5ee80",
+    "data": [
+      {
+        "text": "Summary Report",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523351063
+  },
+  {
+    "id": "3a7d0766-6a09-4426-b769-4aa3dcdda07f",
+    "data": [
+      {
+        "text": "Show summary",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523351063
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "c549d657-48e7-414d-862e-0de3180a6c74",
+    "data": [
+      {
+        "text": "public holidays",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524201521
+  },
+  {
+    "id": "3390d92a-3644-4349-bb3c-4242ec633a92",
+    "data": [
+      {
+        "text": "holidays",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524201521
+  }
+]

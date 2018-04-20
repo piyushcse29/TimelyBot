@@ -1,0 +1,64 @@
+[
+  {
+    "value": "sick",
+    "synonyms": [
+      "sick",
+      "not feeling well"
+    ]
+  },
+  {
+    "value": "vacation",
+    "synonyms": [
+      "vacation",
+      "paid leave"
+    ]
+  },
+  {
+    "value": "loss of pay",
+    "synonyms": [
+      "loss of pay"
+    ]
+  },
+  {
+    "value": "work from home",
+    "synonyms": [
+      "work from home"
+    ]
+  },
+  {
+    "value": "holidays",
+    "synonyms": [
+      "holidays"
+    ]
+  },
+  {
+    "value": "leave",
+    "synonyms": [
+      "vacation"
+    ]
+  },
+  {
+    "value": "ออกจาก",
+    "synonyms": [
+      "ออกจาก"
+    ]
+  },
+  {
+    "value": "leave",
+    "synonyms": [
+      "leave"
+    ]
+  },
+  {
+    "value": "home",
+    "synonyms": [
+      "home"
+    ]
+  },
+  {
+    "value": "confirm",
+    "synonyms": [
+      "confirm"
+    ]
+  }
+]

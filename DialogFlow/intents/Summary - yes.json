@@ -1,0 +1,48 @@
+{
+  "id": "da38421f-7b9f-40bc-8ef3-ed3fba6fb6af",
+  "parentId": "e8b4e21c-9715-4bf3-9295-98d1d2f83761",
+  "rootParentId": "e8b4e21c-9715-4bf3-9295-98d1d2f83761",
+  "name": "Summary - yes",
+  "auto": true,
+  "contexts": [
+    "Summary-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "fullSummary",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "b8735159-67f3-4377-ad4f-955543043266",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "#Summary-followup.email",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your email"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1523963095,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "value": "leavestartdate",
+    "synonyms": [
+      "leavestartdate",
+      "from date"
+    ]
+  },
+  {
+    "value": "5th of october",
+    "synonyms": [
+      "5th of october"
+    ]
+  },
+  {
+    "value": "tomorrow",
+    "synonyms": [
+      "tomorrow"
+    ]
+  },
+  {
+    "value": "Monday",
+    "synonyms": [
+      "Monday"
+    ]
+  },
+  {
+    "value": "today",
+    "synonyms": [
+      "today"
+    ]
+  },
+  {
+    "value": "tommorow",
+    "synonyms": [
+      "tommorow"
+    ]
+  },
+  {
+    "value": "last Monday",
+    "synonyms": [
+      "last Monday"
+    ]
+  },
+  {
+    "value": "form 5th of october",
+    "synonyms": [
+      "form 5th of october"
+    ]
+  }
+]

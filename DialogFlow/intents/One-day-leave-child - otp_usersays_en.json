@@ -1,0 +1,16 @@
+[
+  {
+    "id": "9da8a02e-fa49-43d4-884b-6280565f127d",
+    "data": [
+      {
+        "text": "12345",
+        "alias": "otp",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1524130291
+  }
+]

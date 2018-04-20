@@ -1,0 +1,21 @@
+[
+  {
+    "value": "cancel",
+    "synonyms": [
+      "cancel",
+      "no",
+      "nope",
+      "wrong"
+    ]
+  },
+  {
+    "value": "ok",
+    "synonyms": [
+      "ok",
+      "okay",
+      "confirm",
+      "yes",
+      "true"
+    ]
+  }
+]
