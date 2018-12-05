@@ -1,6 +1,12 @@
 const functions = require('firebase-functions');
 var admin = require("firebase-admin");
 var nodemailer = require('nodemailer');
+//var firebase = require('firebase');
+// var firebaseAuth = require("firebase-auth");
+// //var firebaseui = require('firebaseui');
+// // or for ES6 imports.
+// //import * as firebaseui from 'firebaseui'
+// const DialogflowApp = require('actions-on-google').DialogflowApp;
 
 admin.initializeApp(functions.config().firebase);
 
@@ -10,13 +16,11 @@ var firestore = admin.firestore();
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //
 exports.webhook = functions.https.onRequest((request, response) => {
-
-
-    console.log("request.body.result.parameters: ", request);
-    console.log("request.body.result.parameters: ", request.body.result.parameters);
-    console.log("request.body.result.action: ", request.body.result.action);
-
     let params = request.body.result.parameters;
+    console.log(params);
+    console.log("request.body.result.parameters " + JSON.stringify(params));
+    console.log("request.body.result.action " + request.body.result.action);
+
     switch (request.body.result.action) {
 
         case 'showSummary':
@@ -29,10 +33,9 @@ exports.webhook = functions.https.onRequest((request, response) => {
                         console.log("Summary data " + doc.data());
                         leaves.push(doc.data())
                     });
-                    // now orders have something like this [ {...}, {...}, {...} ]
 
                     // converting array to speech
-                    var speech = `you have ${leaves.length} leaves requested. \n Do you want to see full summary?`;
+                    var speech = `you have ${leaves.length} leaves requested. \n\n Do you want to see full summary?`;
 
                     return response.send({
                         speech: speech
@@ -67,9 +70,9 @@ exports.webhook = functions.https.onRequest((request, response) => {
                         console.log("record 1 " + leaveRecord["date"]);
                         console.log("record 2 " + leaveRecord["date-period"]);
                         if (leaveRecord["date"] !== undefined)
-                            speech += `${index + 1} : ${leaveRecord["Leave-Type"]} leave  on ${leaveRecord["date"]} \n`
+                            speech += `${index + 1} : ${leaveRecord["leave_type"]} leave  on ${leaveRecord["date"]} \n\n`
                         else if (leaveRecord["date-period"] !== undefined) {
-                            speech += `${index + 1} : ${leaveRecord["Leave-Type"]} leave  on ${leaveRecord["date-period"]} \n`
+                            speech += `${index + 1} : ${leaveRecord["leave_type"]} leave  on ${leaveRecord["date-period"]} \n\n`
                         }
                     })
 
@@ -177,15 +180,14 @@ exports.webhook = functions.https.onRequest((request, response) => {
                         "richResponse": {
                             "items": [{
                                     "simpleResponse": {
-                                        "textToSpeech": "Here is your full leave record:"
+                                        "textToSpeech": "Here is the leave requested detail:"
                                     }
                                 },
 
                                 {
                                     "basicCard": {
-                                        "title": "Leave Records",
-                                        "formattedText": "Date: "+request.body.result.parameters.date + "\n Leave-Type: " + request.body.result.parameters.leave_type + "\n Id: " + request.body.result.parameters.email +
-                                            "Are you sure to apply for leave?"
+                                        "title": "Leave Requested",
+                                        "formattedText": "You have requested " + params.leave_type + " leave on " + params.date + "\n\nShall I go ahead?"
                                         //,
                                         // "subtitle": "This is a subtitle"
                                         // ,
@@ -237,7 +239,7 @@ exports.webhook = functions.https.onRequest((request, response) => {
 
             break;
 
-            case 'holidays':
+        case 'holidays':
             console.log("Inside holidays");
 
             // result = {
@@ -311,50 +313,43 @@ exports.webhook = functions.https.onRequest((request, response) => {
             //     }
             // };
 
-result = {
-    "conversationToken": "",
-    "expectUserResponse": true,
-    "expectedInputs": [
-        {
-            "inputPrompt": {
-                "richInitialPrompt": {
-                    "items": [
-                        {
-                            "simpleResponse": {
-                                "textToSpeech": "Math and prime numbers it is!"
-                            }
-                        },
-                        {
-                            "basicCard": {
-                                "title": "Math & prime numbers",
-                                "formattedText": "42 is an even composite number. It\n    is composed of three distinct prime numbers multiplied together. It\n    has a total of eight divisors. 42 is an abundant number, because the\n    sum of its proper divisors 54 is greater than itself. To count from\n    1 to 42 would take you about twenty-one…",
-                                "image": {
-                                    "url": "https://example.google.com/42.png",
-                                    "accessibilityText": "Image alternate text"
-                                },
-                                "buttons": [
-                                    {
-                                        "title": "Read more",
-                                        "openUrlAction": {
-                                            "url": "https://example.google.com/mathandprimes"
-                                        }
+            result = {
+                "conversationToken": "",
+                "expectUserResponse": true,
+                "expectedInputs": [{
+                    "inputPrompt": {
+                        "richInitialPrompt": {
+                            "items": [{
+                                    "simpleResponse": {
+                                        "textToSpeech": "Math and prime numbers it is!"
                                     }
-                                ],
-                                "imageDisplayOptions": "CROPPED"
-                            }
+                                },
+                                {
+                                    "basicCard": {
+                                        "title": "Math & prime numbers",
+                                        "formattedText": "42 is an even composite number. It\n    is composed of three distinct prime numbers multiplied together. It\n    has a total of eight divisors. 42 is an abundant number, because the\n    sum of its proper divisors 54 is greater than itself. To count from\n    1 to 42 would take you about twenty-one…",
+                                        "image": {
+                                            "url": "https://example.google.com/42.png",
+                                            "accessibilityText": "Image alternate text"
+                                        },
+                                        "buttons": [{
+                                            "title": "Read more",
+                                            "openUrlAction": {
+                                                "url": "https://example.google.com/mathandprimes"
+                                            }
+                                        }],
+                                        "imageDisplayOptions": "CROPPED"
+                                    }
+                                }
+                            ],
+                            "suggestions": []
                         }
-                    ],
-                    "suggestions": []
-                }
-            },
-            "possibleIntents": [
-                {
-                    "intent": "actions.intent.TEXT"
-                }
-            ]
-        }
-    ]
-};
+                    },
+                    "possibleIntents": [{
+                        "intent": "actions.intent.TEXT"
+                    }]
+                }]
+            };
             response.send(result);
 
             break;
@@ -382,17 +377,36 @@ result = {
 
             if (request.body.result.parameters.confirm === 'ok') {
 
+                firestore.collection('leaveRequests').add(params)
+                    .then(() => {
+                        return response.send({
+
+                            speech: `Leaves Applied!`
+                        });
+                    })
+                    .catch((e => {
+
+                        console.log("error: ", e);
+
+                        response.send({
+                            speech: "Something is wrong with your OTP"
+                        });
+                    }))
+
+
+
                 var transporter = nodemailer.createTransport({
                     service: 'Gmail',
                     auth: {
                         user: 'mittalerish@gmail.com',
-                        pass: 'Krsnaprabhu@29'
+                        pass: ''
                     }
                 });
 
+////request.body.result.parameters.email,
                 var mailOptions = {
                     from: 'mittalerish@gmail.com',
-                    to: request.body.result.parameters.email,
+                    to: 'm@piyushmittal.com',
                     subject: 'OTP For TMB leave',
                     text: 'Your OTP to apply for leaves: 12345'
                 };
@@ -421,30 +435,23 @@ result = {
             break;
 
         case 'One-day-leave.One-day-leave-custom.One-day-leave-custom.One-day-leave-child-confirm-otp':
-            console.log("Inside One-day-leave-child-otp");
+            console.log("Inside One-day-leave-child-otp" + JSON.stringify(params));
 
-            if (request.body.result.parameters.otp === '12345') {
-                firestore.collection('leaveRequests').add(params)
-                    .then(() => {
-                        return response.send({
+            response.send({
 
-                            speech: `Leaves Applied!`
-                        });
-                    })
-                    .catch((e => {
+                speech: `Leaves Applied!`
+            });
+            // if ((request.body.result.parameters.otp).replace(/\s/g,'') === '12345') {
+            //     return response.send({
 
-                        console.log("error: ", e);
+            //         speech: `Leaves Applied!`
+            //     });
+            // } else {
+            //     response.send({
 
-                        response.send({
-                            speech: "Something is wrong with your OTP"
-                        });
-                    }))
-            } else {
-                response.send({
-
-                    speech: 'Please enter correct OTP'
-                });
-            }
+            //         speech: 'Please enter correct OTP'
+            //     });
+            // }
             break;
     }
 
